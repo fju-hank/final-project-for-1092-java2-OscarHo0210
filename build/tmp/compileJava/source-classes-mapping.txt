@@ -2,11 +2,11 @@ com/fju/Airplane3.java
  com.fju.Airplane3
 com/fju/Airplane.java
  com.fju.Airplane
-com/fju/Tester.java
- com.fju.Tester
-com/fju/Airplane4.java
- com.fju.Airplane4
 com/fju/Airplane2.java
  com.fju.Airplane2
+com/fju/Airplane4.java
+ com.fju.Airplane4
+com/fju/Tester.java
+ com.fju.Tester
 com/fju/Airplane1.java
  com.fju.Airplane1
