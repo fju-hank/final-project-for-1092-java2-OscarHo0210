@@ -13,16 +13,16 @@ public class Airplane1 extends Airplane{
 
     @Override
     public String getDestination() {
-        return null;
+        return "Thailand Bangkok Airport (BKK)";
     }
 
     @Override
     public String getGate() {
-        return null;
+        return "D6";
     }
 
     @Override
     public int getBaggageId(){
-        return Integer.parseInt(null);
+        return 2;
     }
 }

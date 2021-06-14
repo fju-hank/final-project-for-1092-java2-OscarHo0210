@@ -15,9 +15,9 @@ public class Tester{
         new Airplane3(), new Airplane4()};
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your name:");
-        String name = String.valueOf(Integer.parseInt(scanner.next()));
+        String name = scanner.next();
         System.out.println("Please enter your flight Number:");
-        String flightNumber = String.valueOf(Integer.parseInt(scanner.next()));
+        String flightNumber = scanner.next();
         System.out.println("Please enter your password ID:");
         int id = Integer.parseInt(scanner.next());
         System.out.println("Flight Number: " + flightNumber + ", Destination: " + destination + ", Gate: " + gate + ", Baggage: " + baggageId);
