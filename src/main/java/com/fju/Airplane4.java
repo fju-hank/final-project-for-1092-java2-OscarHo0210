@@ -11,6 +11,10 @@ public class Airplane4 extends Airplane{
         return "23:10";
     }
 
+    @Override
+    public String getLocation() {
+        return "Paris Charles de Gaulle Airport(CDG)";
+    }
 
     @Override
     public String getFlightNumber() {

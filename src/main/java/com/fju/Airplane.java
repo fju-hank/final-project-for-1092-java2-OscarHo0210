@@ -12,6 +12,7 @@ public abstract class Airplane {
 
     public abstract String getTime();
     public abstract String getFlightNumber();
+    public abstract String getLocation();
     public abstract int getBaggage();
     public abstract String getGate();
     public abstract String getPlaneId();

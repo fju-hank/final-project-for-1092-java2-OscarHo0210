@@ -17,6 +17,11 @@ public class Airplane3 extends Airplane{
         }
 
         @Override
+        public String getLocation() {
+                return "Singapore Changi Airport(SIN)";
+        }
+
+        @Override
         public int getBaggage() {
                 return 5;
         }

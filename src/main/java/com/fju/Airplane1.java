@@ -18,6 +18,11 @@ public class Airplane1 extends Airplane{
     }
 
     @Override
+    public String getLocation() {
+        return "Bangkok Suvarnabhumi Airport(BKK)";
+    }
+
+    @Override
     public int getBaggage() {
         return 2;
     }
