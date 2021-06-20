@@ -10,3 +10,8 @@ com/fju/Airplane2.java
  com.fju.Airplane2
 com/fju/Tester.java
  com.fju.Tester
+com/fju/planeUI/PlaneUI.java
+ com.fju.planeUI.PlaneUI
+com/fju/planeUI/Plane.java
+ com.fju.planeUI.Plane
+ com.fju.planeUI.Plane$1
