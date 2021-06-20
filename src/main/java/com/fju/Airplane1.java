@@ -1,28 +1,21 @@
 package com.fju;
 
 public class Airplane1 extends Airplane{
-    public Airplane1(){
-        name = "Oscar";
+    public Airplane1() {
         flightNumber = "KL843";
-        passwordId = 86563210;
-    }
-    @Override
-    public String getId() {
-        return null;
+        name = "Oscar";
+        passwordId = 123456;
     }
 
     @Override
-    public String getDestination() {
-        return "Thailand Bangkok Airport (BKK)";
+    public String getName() {
+        return "Hello";
     }
 
     @Override
-    public String getGate() {
-        return "D6";
+    public int getPrice() {
+        return 0;
+
     }
 
-    @Override
-    public int getBaggageId(){
-        return 2;
-    }
 }
