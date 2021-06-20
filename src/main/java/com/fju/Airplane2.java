@@ -9,6 +9,11 @@ public class Airplane2 extends Airplane {
     }
 
     @Override
+    public String getTime() {
+        return "18:45";
+    }
+
+    @Override
     public String getFlightNumber(){
         return "UA871";
     }
@@ -22,4 +27,12 @@ public class Airplane2 extends Airplane {
     public String getGate(){
         return "D5";
     }
+
+    @Override
+    public String getPlaneId() {
+        return "N2749U";
+    }
+
+
+
 }

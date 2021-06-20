@@ -10,9 +10,9 @@ public abstract class Airplane {
         return (a.equals(flightNumber) && b.equals(name) && c == passwordId);
     }
 
+    public abstract String getTime();
     public abstract String getFlightNumber();
-
     public abstract int getBaggage();
-
     public abstract String getGate();
+    public abstract String getPlaneId();
 }

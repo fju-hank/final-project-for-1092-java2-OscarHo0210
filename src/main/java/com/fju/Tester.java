@@ -17,7 +17,7 @@ public class Tester {
         System.out.println("Your flight number: " + flightNumber + ", Name: " + name + ", Password ID: " + passwordId);
         for (Airplane airplane : airplanes) {
             if (airplane.validate(flightNumber, name, passwordId)) {
-                System.out.println("Flight Number: " + airplane.getFlightNumber() + " / Baggage carousel: " + airplane.getBaggage() + " / Gate: " + airplane.getGate());
+                System.out.println("Flight Number: " + airplane.getFlightNumber() + "\n" + "Time: " + airplane.getTime() + " / Carousel: " + airplane.getBaggage() + " / Gate: " + airplane.getGate() + " / Plane's ID: " + airplane.getPlaneId());
                 break;
             }
         }

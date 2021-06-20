@@ -7,6 +7,11 @@ public class Airplane3 extends Airplane{
                 passwordId = 456789;
         }
         @Override
+        public String getTime() {
+                return "16:40";
+        }
+
+        @Override
         public String getFlightNumber() {
                 return "SQ878";
         }
@@ -19,5 +24,10 @@ public class Airplane3 extends Airplane{
         @Override
         public String getGate(){
                 return "D2";
+        }
+
+        @Override
+        public String getPlaneId(){
+                return "9V-SCH";
         }
 }
