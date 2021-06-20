@@ -5,11 +5,14 @@ public abstract class Airplane {
     String name;
     int passwordId;
 
-    public boolean validate(String flightNumber, String name, int passwordId) {
-        return(flightNumber == flightNumber && name == name && passwordId == passwordId);
+    public boolean validate(String a, String b, int c) {
+
+        return (a.equals(flightNumber) && b.equals(name) && c == passwordId);
     }
 
-    public abstract String getName();
+    public abstract String getFlightNumber();
 
-    public abstract int getPrice();
+    public abstract int getBaggage();
+
+    public abstract String getGate();
 }

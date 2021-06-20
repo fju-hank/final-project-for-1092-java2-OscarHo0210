@@ -9,18 +9,18 @@ public class Tester {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your flight number: ");
-        String flightNumber = scanner.next();
+        String flightNumber = scanner.nextLine();
         System.out.println("Please enter your name: ");
-        String name = scanner.next();
+        String name = scanner.nextLine();
         System.out.println("Please enter your password ID: ");
         int passwordId = Integer.parseInt(scanner.next());
-        System.out.println("Flight number: " + flightNumber + ", Name: " + name + ", Password ID: " + passwordId);
-
+        System.out.println("Your flight number: " + flightNumber + ", Name: " + name + ", Password ID: " + passwordId);
         for (Airplane airplane : airplanes) {
             if (airplane.validate(flightNumber, name, passwordId)) {
-                System.out.println(airplane.getName() + " / " + airplane.getPrice());
+                System.out.println("Flight Number: " + airplane.getFlightNumber() + " / Baggage carousel: " + airplane.getBaggage() + " / Gate: " + airplane.getGate());
                 break;
             }
         }
+
     }
 }

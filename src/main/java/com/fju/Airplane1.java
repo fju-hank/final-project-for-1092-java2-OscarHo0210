@@ -8,14 +8,18 @@ public class Airplane1 extends Airplane{
     }
 
     @Override
-    public String getName() {
-        return "Hello";
+    public String getFlightNumber() {
+        return "Flight number : KL843";
     }
 
     @Override
-    public int getPrice() {
-        return 0;
+    public int getBaggage() {
+        return 2;
+    }
 
+    @Override
+    public String getGate(){
+        return "D6";
     }
 
 }
