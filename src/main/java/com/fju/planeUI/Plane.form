@@ -49,12 +49,12 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="9a08f" class="javax.swing.JLabel">
+          <component id="9a08f" class="javax.swing.JLabel" binding="LabelFlightNumber">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="Please enter your flight number："/>
             </properties>
           </component>
           <component id="d95c6" class="javax.swing.JTextField" binding="textField1" default-binding="true">
@@ -67,12 +67,12 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="91ea7" class="javax.swing.JLabel">
+          <component id="91ea7" class="javax.swing.JLabel" binding="LabelName">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="Please enter your name："/>
             </properties>
           </component>
           <component id="73534" class="javax.swing.JTextField" binding="textField2" default-binding="true">
@@ -83,12 +83,12 @@
             </constraints>
             <properties/>
           </component>
-          <component id="bd630" class="javax.swing.JLabel">
+          <component id="bd630" class="javax.swing.JLabel" binding="LabelPasswordId">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="Please enter your password ID："/>
             </properties>
           </component>
           <component id="520bf" class="javax.swing.JTextField" binding="textField3" default-binding="true">

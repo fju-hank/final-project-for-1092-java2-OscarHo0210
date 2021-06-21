@@ -20,9 +20,6 @@ public class Tester {
                 System.out.println("Flight Number: " + airplane.getFlightNumber() + "\n" + "Location:" + airplane.getLocation() + "\n" + "Time: " + airplane.getTime() + " / Carousel: "
                         + airplane.getBaggage() + " / Gate: " + airplane.getGate() + " / Plane's ID: " + airplane.getPlaneId());
                 break;
-            }else{
-                System.out.println("Your information is not correct");
-                break;
             }
         }
 
