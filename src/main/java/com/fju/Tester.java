@@ -8,7 +8,7 @@ public class Tester {
                 new Airplane3(), new Airplane4()};
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your flight number: ");
+        System.out.println("Hello, this is a flight information system" + "\n" + "Please enter your flight number: ");
         String flightNumber = scanner.nextLine();
         System.out.println("Please enter your name: ");
         String name = scanner.nextLine();
@@ -19,7 +19,11 @@ public class Tester {
             if (airplane.validate(flightNumber, name, passwordId)) {
                 System.out.println("Flight Number: " + airplane.getFlightNumber() + "\n" + "Location:" + airplane.getLocation() + "\n" + "Time: " + airplane.getTime() + " / Carousel: "
                         + airplane.getBaggage() + " / Gate: " + airplane.getGate() + " / Plane's ID: " + airplane.getPlaneId());
-                break;
+            }
+            System.out.println("Go into the check in system?(Enter OK)");
+            String airInfo = scanner.nextLine();
+            if (airInfo.equals("OK")){
+                System.out.println();
             }
         }
 
