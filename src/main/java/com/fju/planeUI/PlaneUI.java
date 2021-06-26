@@ -1,4 +1,7 @@
 package com.fju.planeUI;
 
-public class PlaneUI {
+import javax.swing.*;
+
+public class PlaneUI extends JFrame {
+
 }

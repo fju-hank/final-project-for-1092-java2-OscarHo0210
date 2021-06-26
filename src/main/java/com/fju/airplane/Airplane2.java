@@ -15,7 +15,7 @@ public class Airplane2 extends Airplane {
 
     @Override
     public String getFlightNumber(){
-        return "UA871";
+        return "UA872";
     }
 
     @Override
