@@ -1,6 +1,6 @@
 package com.fju.checkIn;
 
-import com.fju.Tester;
+import com.fju.airplane.Tester;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

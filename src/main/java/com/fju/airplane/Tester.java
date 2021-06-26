@@ -1,4 +1,4 @@
-package com.fju;
+package com.fju.airplane;
 
 import com.fju.airplane.*;
 
