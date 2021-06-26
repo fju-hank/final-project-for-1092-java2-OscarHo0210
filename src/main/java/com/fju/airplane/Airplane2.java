@@ -1,4 +1,4 @@
-package com.fju;
+package com.fju.airplane;
 
 public class Airplane2 extends Airplane {
 

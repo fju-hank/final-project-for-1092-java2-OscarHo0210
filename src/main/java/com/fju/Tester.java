@@ -1,5 +1,7 @@
 package com.fju;
 
+import com.fju.airplane.*;
+
 import java.util.Scanner;
 
 public class Tester {
@@ -17,14 +19,15 @@ public class Tester {
         System.out.println("Your flight number: " + flightNumber + ", Name: " + name + ", Password ID: " + passwordId);
         for (Airplane airplane : airplanes) {
             if (airplane.validate(flightNumber, name, passwordId)) {
-                System.out.println("Flight Number: " + airplane.getFlightNumber() + "\n" + "Location:" + airplane.getLocation() + "\n" + "Time: " + airplane.getTime() + " / Carousel: "
+                System.out.println("Flight Number: " + airplane.getFlightNumber() + "\n" + "Location:" + airplane.getLocation() + "\n" + "Arrive Time: " + airplane.getTime() + " / Carousel: "
                         + airplane.getBaggage() + " / Gate: " + airplane.getGate() + " / Plane's ID: " + airplane.getPlaneId());
             }
-            System.out.println("Go into the check in system?(Enter OK)");
+
+            /*System.out.println("Go into the check in system?(Enter OK)");
             String airInfo = scanner.nextLine();
             if (airInfo.equals("OK")){
                 System.out.println();
-            }
+            }*/
         }
 
     }

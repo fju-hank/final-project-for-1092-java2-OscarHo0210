@@ -1,4 +1,4 @@
-package com.fju;
+package com.fju.airplane;
 
 public abstract class Airplane {
     String flightNumber;
