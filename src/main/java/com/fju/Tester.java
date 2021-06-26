@@ -11,9 +11,9 @@ public class Tester {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello, this is a flight information system" + "\n" + "Please enter your flight number: ");
-        String flightNumber = scanner.nextLine();
+        String flightNumber = scanner.next();
         System.out.println("Please enter your name: ");
-        String name = scanner.nextLine();
+        String name = scanner.next();
         System.out.println("Please enter your password ID: ");
         int passwordId = Integer.parseInt(scanner.next());
         System.out.println("Your flight number: " + flightNumber + ", Name: " + name + ", Password ID: " + passwordId);
@@ -24,10 +24,12 @@ public class Tester {
             }
         }
 
-        System.out.println("Go into the check in system?");
-        String airInfo = scanner.nextLine();
-        if (airInfo.equals("OK")){
-            System.out.println();
+        System.out.println("Go into the check in system?(Enter Yes / No)");
+        String airInfo = scanner.next();
+        if (airInfo.equals("Yes")){
+            System.out.println("Hello, welcome to check in system.");
+        }else if (airInfo.equals("No")){
+            System.out.println("OK, Bye!");
         }
 
     }
