@@ -17,9 +17,15 @@ public class ReadAndWrite {
             }
 
             FileWriter fileWriter = new FileWriter("TPE COVID-19 departure rule.txt");
+            fileWriter.write(content);
+            fileWriter.flush();
+            System.out.println("Success");
+
+            fileReader.close();
+            fileWriter.close();
 
         }catch(Exception exception){
-
+            System.out.println("Error");
         }
     }
 }

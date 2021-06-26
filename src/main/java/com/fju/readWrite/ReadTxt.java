@@ -6,11 +6,11 @@ public class ReadTxt {
     public static void main(String[] args) {
         try{
             FileWriter fileWriter = new FileWriter("TPE COVID-19 departure rule.txt");
-            fileWriter.write("Hello");
+            fileWriter.write("Success");
             fileWriter.flush();
             fileWriter.close();
         }catch (Exception exception) {
-            System.out.println("Some problem");
+            System.out.println("Error");
 
         }
     }
