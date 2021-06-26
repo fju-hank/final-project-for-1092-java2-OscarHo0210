@@ -1,4 +1,4 @@
-package com.fju.checkIn;
+package com.fju.airplane;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package com.fju.checkIn;
+package com.fju.airplane;
 
 public class Check4 extends CheckIn{
     public Check4() {
