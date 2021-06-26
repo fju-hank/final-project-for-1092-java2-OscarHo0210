@@ -11,7 +11,7 @@ import java.net.URL;
 public class AirNet {
     public static void main(String[] args) {
         try{
-            URL url = new URL("https://opendata.immigration.gov.tw/APIS/TPE5");
+            URL url = new URL("https://opendata.immigration.gov.tw/APIS/TPE5"); //來源是OpenData 政府資料開放平台
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             InputStream inputStream = connection.getInputStream();
             BufferedReader in = new BufferedReader(new InputStreamReader(inputStream));
@@ -30,3 +30,4 @@ public class AirNet {
         }
     }
 }
+
