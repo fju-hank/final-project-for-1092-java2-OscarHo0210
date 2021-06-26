@@ -1,7 +1,5 @@
 package com.fju.airplane;
 
-import com.fju.airplane.*;
-
 import java.util.Scanner;
 
 public class Tester {
@@ -27,7 +25,7 @@ public class Tester {
         System.out.println("Go into the check in system?(Enter Yes / No)");
         String airInfo = scanner.next();
         if (airInfo.equals("Yes")){
-            System.out.println("Hello, welcome to check in system.");
+            System.out.println(" ");
         }else if (airInfo.equals("No")){
             System.out.println("OK, Bye!");
         }

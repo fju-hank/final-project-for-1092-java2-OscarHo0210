@@ -2,6 +2,6 @@ package com.fju.checkIn;
 
 public class Check3 extends CheckIn{
     public Check3() {
-        super(456789, "SQ877", "2C", "14:20");
+        super(003,456789, "SQ877", "2C", "14:20");
     }
 }
