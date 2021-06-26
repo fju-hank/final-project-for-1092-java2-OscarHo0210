@@ -12,16 +12,13 @@ public class CheckIn extends Tester {
         String seat;
         String departureTime;
 
-        try{
-            Scanner scanner = new Scanner(System.in);
-            while (true){
-                passwordId = scanner.nextInt();
-                if (passwordId == 0){
-                    System.out.println("Your Flight number: " +  "Your seat: " );
-                }
-            }
-        }catch (InputMismatchException exception){
-            System.out.println();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Check in system.(Enter Yes / No)");
+        String airInfo = scanner.next();
+        if (airInfo.equals("Yes")){
+            System.out.println("Hello, welcome to check in system.");
+        }else if (airInfo.equals("No")){
+            System.out.println("OK, Bye!");
         }
 
     }
