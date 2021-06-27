@@ -1,4 +1,4 @@
-package com.fju.airplane;
+package com.fju.airplane.flightInformation;
 
 public class Airplane1 extends Airplane{
     public Airplane1() {

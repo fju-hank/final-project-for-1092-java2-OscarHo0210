@@ -1,5 +1,8 @@
 package com.fju.airplane;
 
+import com.fju.airplane.checkIn.*;
+import com.fju.airplane.flightInformation.*;
+
 import java.util.Scanner;
 
 public class Tester {
@@ -41,7 +44,7 @@ public class Tester {
             if (airInfo1.equals("Yes")){
                 System.out.println("Your check in is success. Thanks!");
             }else if (airInfo1.equals("No")){
-                System.out.println("Your information is not correct.");
+                System.out.println("Your check in is not success.");
             }
         }else if (airInfo.equals("No")){
             System.out.println("OK, Bye!");
