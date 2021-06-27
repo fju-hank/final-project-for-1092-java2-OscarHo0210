@@ -1,8 +1,5 @@
 package com.fju.airplane.checkIn;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 public class CheckIn{
     int boardId;
     public int passwordId;
