@@ -39,7 +39,7 @@ public class Tester {
                     System.out.println("Password ID: " + checkIn.passwordId + "\n" + "Flight Number: " + checkIn.flightNumber + "\n" + "Seat: " + checkIn.seat + "\n" + "Departure Time: " + checkIn.departureTime);
                 }
             }
-            System.out.println("Is your information correct. (Enter Yes / No)" );
+            System.out.println("Is your information correct? (Enter Yes / No)" );
             String airInfo1 = scanner.next();
             if (airInfo1.equals("Yes")){
                 System.out.println("Your check in is success. Thanks!");
