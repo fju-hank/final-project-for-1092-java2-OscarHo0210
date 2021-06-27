@@ -41,7 +41,7 @@ public class CheckInGUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-                    FileReader fileReader = new FileReader("TPE COVID-19 departure rule.txt");
+                    FileReader fileReader = new FileReader("TPE COVID-19 departure rule.txt"); //提供COVID-19的相關離闖資訊
                     BufferedReader bufferedReader = new BufferedReader(fileReader);
                     String content = "";
                     while (bufferedReader.ready()){
@@ -61,7 +61,7 @@ public class CheckInGUI {
             public void actionPerformed(ActionEvent e) {
                 try {
                     try {
-                        Desktop.getDesktop().browse(new URI("https://www.taoyuan-airport.com/main_ch/index.aspx"));
+                        Desktop.getDesktop().browse(new URI("https://www.taoyuan-airport.com/main_ch/index.aspx")); //網路連線至桃園機場官方網站
                     } catch (IOException ioException) {
                         ioException.printStackTrace();
                     } catch (URISyntaxException uriSyntaxException) {
