@@ -1,17 +1,22 @@
 package com.fju.readWrite;
 
-import java.io.FileWriter;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
 public class ReadTxt {
     public static void main(String[] args) {
-        try{
-            FileWriter fileWriter = new FileWriter("TPE COVID-19 departure rule.txt");
-            fileWriter.write("Success");
-            fileWriter.flush();
-            fileWriter.close();
-        }catch (Exception exception) {
-            System.out.println("Error");
 
+        try{
+            FileReader fileReader = new FileReader("TPE COVID-19 departure rule.txt");
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String content = "";
+            while (bufferedReader.ready()){
+                content = bufferedReader.readLine();
+                System.out.println(content);
+            }
+
+        }catch(Exception exception){
+            System.out.println("Error");
         }
+
     }
 }
