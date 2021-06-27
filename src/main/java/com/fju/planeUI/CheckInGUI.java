@@ -22,7 +22,17 @@ public class CheckInGUI {
     private JButton TPEButton;
     private JPanel CheckInPanel;
 
+
     public CheckInGUI() {
+
+        ConfirmButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Hello world");
+            }
+
+        });
+
         TPEButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
