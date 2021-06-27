@@ -1,4 +1,4 @@
-package com.fju.readWrite;
+package com.fju.read;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
