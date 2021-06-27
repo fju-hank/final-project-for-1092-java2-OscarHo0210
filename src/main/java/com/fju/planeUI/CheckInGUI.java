@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -28,9 +31,29 @@ public class CheckInGUI {
         ConfirmButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Hello world");
+                JOptionPane.showMessageDialog(null, "Your check in is success. Thanks!");
             }
 
+        });
+
+
+        TPECOVID19DepartureButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+                    FileReader fileReader = new FileReader("TPE COVID-19 departure rule.txt");
+                    BufferedReader bufferedReader = new BufferedReader(fileReader);
+                    String content = "";
+                    while (bufferedReader.ready()){
+                        content = bufferedReader.readLine();
+                        System.out.println(content);
+                    }
+                } catch (FileNotFoundException fileNotFoundException) {
+                    fileNotFoundException.printStackTrace();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
         });
 
         TPEButton.addActionListener(new ActionListener() {

@@ -26,7 +26,7 @@ public class FlightInformationGUI {
         ConfirmButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Hello world");
+                JOptionPane.showMessageDialog(null, "Go into the check in system?");
             }
 
         });
