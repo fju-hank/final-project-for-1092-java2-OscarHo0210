@@ -21,7 +21,7 @@ public class Tester {
         for (Airplane airplane : airplanes) {
             if (airplane.validate(flightNumber, name, passwordId)) {
                 System.out.println("Flight Number: " + airplane.getFlightNumber() + "\n" + "Location:" + airplane.getLocation() + "\n" + "Arrive Time: " + airplane.getTime() + " / Carousel: "
-                        + airplane.getBaggage() + " / Gate: " + airplane.getGate() + " / Plane's ID: " + airplane.getPlaneId());
+                        + airplane.getBaggage() + " / Gate: " + airplane.getGate() + " / FlightInformationGUI's ID: " + airplane.getPlaneId());
             }
         }
 
@@ -33,7 +33,7 @@ public class Tester {
 
             System.out.println("Check in system, please enter your board ID: ");
             int boardId = Integer.parseInt(scanner.next());
-            System.out.println("Please confirm your information. (Enter Yes / No)" );
+            System.out.println("Please confirm your information. (Enter Right / Wrong)" );
             for (CheckIn checkIn : checkIns) {
                 if (checkIn.validate(boardId)) {
                     System.out.println("Password ID: " + checkIn.passwordId + "\n" + "Flight Number: " + checkIn.flightNumber + "\n" + "Seat: " + checkIn.seat + "\n" + "Departure Time: " + checkIn.departureTime);

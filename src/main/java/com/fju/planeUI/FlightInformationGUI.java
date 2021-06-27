@@ -2,12 +2,11 @@ package com.fju.planeUI;
 
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class Plane {
+public class FlightInformationGUI {
     private JPanel PanelMain;
     private JPanel PanelTop;
     private JPanel PanelLeft;
@@ -23,7 +22,7 @@ public class Plane {
 
 
 
-    public Plane() {
+    public FlightInformationGUI() {
         ConfirmButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -36,7 +35,7 @@ public class Plane {
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Airplane");
 
-        jFrame.setContentPane(new Plane().PanelMain);
+        jFrame.setContentPane(new FlightInformationGUI().PanelMain);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.pack();
         jFrame.setVisible(true);
