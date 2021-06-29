@@ -2,7 +2,9 @@ package com.fju.airplane;
 
 import com.fju.airplane.checkIn.*;
 import com.fju.airplane.flightInformation.*;
+import com.fju.planeUI.FlightInformationGUI;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Tester {
@@ -22,6 +24,16 @@ public class Tester {
             if (airplane.validate(flightNumber, name, passwordId)) {
                 System.out.println("Flight Number: " + airplane.getFlightNumber() + "\n" + "Location:" + airplane.getLocation() + "\n" + "Arrive Time: " + airplane.getTime() + " / Carousel: "
                         + airplane.getBaggage() + " / Gate: " + airplane.getGate() + " / FlightInformation's ID: " + airplane.getPlaneId());
+
+                /*JFrame jFrame = new JFrame();
+                jFrame.pack();
+                jFrame.setLocationRelativeTo(null);
+                jFrame.setContentPane(new FlightInformationGUI().panelMain);
+                jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                jFrame.setVisible(true);
+
+                new FlightInformationGUI();*/
+
             }
         }
 

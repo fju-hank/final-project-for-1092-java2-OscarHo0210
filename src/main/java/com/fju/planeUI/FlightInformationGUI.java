@@ -1,12 +1,16 @@
 package com.fju.planeUI;
 
 
+import com.fju.airplane.Tester;
+
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class FlightInformationGUI {
+public class FlightInformationGUI extends Tester {
+    public JPanel panelMain;
     private JPanel PanelMain;
     private JPanel PanelTop;
     private JPanel PanelLeft;
@@ -26,7 +30,20 @@ public class FlightInformationGUI {
         ConfirmButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Go into the check in system?");
+                String string1 = toString();
+                String string2 = toString();
+                String string3 = toString();
+
+                if (string1.equals(null)) {
+                    JOptionPane.showConfirmDialog(ConfirmButton, "Wrong information? Please try again.");
+                } else if (string2.equals(null)) {
+                    JOptionPane.showConfirmDialog(ConfirmButton, "Wrong information? Please try again.");
+
+                } else if (string3.equals(null)) {
+                    JOptionPane.showConfirmDialog(ConfirmButton, "Wrong information? Please try again.");
+                } else {
+                    int order = JOptionPane.showConfirmDialog(null, "Go into the check in system?");
+                }
             }
 
         });

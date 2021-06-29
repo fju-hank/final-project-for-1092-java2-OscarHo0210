@@ -14,7 +14,7 @@
 
 1. 繼承(Airplane與CheckIn)
 
-2. flight information 與 check in system 的GUI介面 
+2. flight information 與 check in system 的GUI介面設計與按鈕製作 
 
 3. 讀寫檔案(讀寫桃園機場COVID-19規定文字檔TPE COVID-19 departure rule.txt)
 
@@ -23,6 +23,6 @@
 未來想完成:
 1. mariadb(資料量一旦多了就要有database)
 
-2. GUI介面優化
+2. GUI介面連接成功
 
 3. 更簡潔的程式碼
